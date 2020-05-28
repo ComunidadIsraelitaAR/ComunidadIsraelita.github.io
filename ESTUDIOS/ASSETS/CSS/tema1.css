@@ -1,4 +1,12 @@
 .tema1{
-    background-color: lightcoral;
+    background-color: rgb(117, 66, 0);
     height: 400px;
+}
+
+#temas{
+    padding-top: 6rem;
+}
+
+.container{
+    padding: 0%;
 }
