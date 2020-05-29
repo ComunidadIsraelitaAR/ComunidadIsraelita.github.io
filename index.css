@@ -35,6 +35,8 @@
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
+    background: rgb(0,0,255);
+    background: linear-gradient(180deg, rgba(0,0,255,1) 10%,  rgba(0,0,255,1) 39%, rgba(0,0,0,1) 65%);
   }
   .swiper-slide {
     background-position: center;
@@ -44,7 +46,15 @@
     background: #000;
     /*-webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0006);*/
   }
+#invitacion{
+font-size: 2rem;
 
+
+}
+body{
+  background: rgb(0,0,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 15%, rgba(0,0,255,1) 39%, rgba(0,0,0,1) 65%);
+}
   .h2{
     
     align-items: center;
@@ -53,69 +63,7 @@
   }
 
   .h3{
-    text-align: right;
-    
+    text-align: center;
   }
-  .tema1{
-    width: 100%;
-    height: 100%;
-    padding: 2rem;
-    
-    background-color: rgb(255, 230, 0);
-  }
-  .tema2{
-    width: 100%;
-    height: 100%;
-    background-color: yellow;
-  }
-  .tema3{
-    width: 100%;
-    height: 100%;
-    background-color: yellow;
-  }
-  .tema4{
-    width: 100%;
-    height: 100%;
-    background-color: yellow;
-  }
-  .tema5{
-    width: 100%;
-    height: 100%;
-    background-color: yellow;
-  }
-  .tema6{
-    width: 100%;
-    height: 100%;
-    background-color: yellow;
-  }
-  .tema7{
-    width: 100%;
-    height: 100%;
-    background-color: yellow;
-  }
-  .tema8{
-    width: 100%;
-    height: 100%;
-    background-color: yellow;
-  }
-  .tema9{
-    width: 100%;
-    height: 100%;
-    background-color: yellow;
-  }
-  .tema10{
-    width: 100%;
-    height: 100%;
-    background-color: yellow;
-  }
-  .tema11{
-    width: 100%;
-    height: 100%;
-    background-color: yellow;
-  }
+ 
 
-  .tema12{
-    width: 100%;
-    height: 100%;
-    background-color: yellow;
-  }
