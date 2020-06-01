@@ -11,9 +11,23 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
 </head>
 <body>
+  <script>
+     var prevScrollpos = window.pageYOffset;
+    window.onscroll = function(){
+        var currentScrollpos = window.pageYOffset;
+        if(prevScrollpos > currentScrollpos){
+            document.getElementsByClassName("navbar").style.top = "0";
+        }else{
+            document.getElementsByClassName("navbar").style.top = "-100px";
+        }
 
+        prevScrollpos = currentScrollpos;
+    }
+  </script>
 <!--NAVBAR-->
 <header class="header">
   <nav class="navbar navbar-expand-md navbar-light">
@@ -25,13 +39,14 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     
+
     <div class="navbar-collapse collapse justify-content-stretch" id="navbar6">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="nav-link" href="./index.html">Inicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Estudios</a>
+                <a class="nav-link" href=" $('html, body').animate({ scrollTop: $('.swiper-container').offset().top }, 500);">Estudios</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Acerca de</a>
@@ -42,14 +57,33 @@
   </nav>
 </header>
 
+<!--VIDEO-->
+<header class="header2 content">
+  <div class="header-video">
+    <video src="./IMG/New_Chapter_001_Videvo.mov" autoplay loop></video>
+  </div>
+<div class="header-overlay"></div>
+<div class="header-content">
+  <h1>Juan 5: 39.</h1>
+  <p>"Escudriñad las Escrituras, porque á vosotros os parece que en ellas tenéis la vida eterna; y ellas son las que dan testimonio de mí"</p>
+</div>
+</header>
+<br>
+
 <!-- Begin page content -->
-<div class="card">
-  <h3>Escudriñad las Escrituras porque a vosotros os parece que teneis la vida eterne y son las que dan testimonio de mi</h3>
+<div class="container aparece" id="textointro">
+  <div class="h2">
+    Este es un espacio donde puedes estudiar las Sagradas Escrituras guiado
+    por el material de estudio que llamamos: Escuela Sabática.
+    Una serie de temas para estudiar y comprender la sabiduría divina
+    durante un trimestre.
+  </div>
+  <br>
 </div>
 <br>
+<br>
   <!-- Swiper -->
- 
-  <div class="swiper-container">
+  <div class="swiper-container aparece">
     <div class="swiper-wrapper">
       <div class="swiper-slide"> <a title="Prueba" href="./ESTUDIOS/tema1.html"><img src="./IMG/TEMA 1.png" alt="tema 1"></a></div>
       <div class="swiper-slide"> <a title="Prueba" href="./ESTUDIOS/tema2.html"><img src="./IMG/TEMA 2.png" alt="tema 2"></a></div>
@@ -70,12 +104,13 @@
 
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-
-  <div class="container">
-    <div class="acerca">
-      Comunidad Israelita A.R.
-      Somos una asociacion religiosa que busca difundir el conocimiento de la verdad contenida en las Sagradas Escrituras.
-      
+  <br>
+  <div class="container aparece">
+    <div class="p">
+      La Comunidad Israelita es un asociacion religiosa que busca difundir el conocimiento de la verdad contenida en las Sagradas Escrituras, asi como fomentar la guarda de los mandamientos de Dios y el testimonio de Jesus el Mesias de Israel.
+      </div>
+    <div class="container">
+      <img src="./IMG/TEMA 10.png" alt="">
     </div>
   </div>
   
@@ -101,5 +136,6 @@
       },
     });
   </script>
+
 </body>
 </html>
