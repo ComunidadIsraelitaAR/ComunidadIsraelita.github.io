@@ -11,13 +11,15 @@
   body{
     height: 100%;
     width: 100%;
-    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
     margin: 0;
     font-size: 1rem;
     line-height: 2rem;
     color: #333333;
     overflow-x: hidden;
     
+  }
+  main{
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
   }
   
   .header2{
@@ -75,17 +77,11 @@
 
 }
 
-.h2{
-  text-align: center;
-  font-style: oblique;
-}
-.h3{
-  text-emphasis: unset;
-  text-align: right;
-  font-size: 2rem;
-  
-}
 
+
+.click{
+  text-align: center;
+}
   
   .swiper-container {
     width: 100%;
@@ -114,10 +110,63 @@
   box-shadow: 0 5px 15px 0
   rgb(0, 0, 0, .5);
 }
+
+
 .conocenos{
-  
+  display: flex;
   background-color: #ffffff;
   border-radius: 20px;
   padding: 3rem;
+}
+
+/* -------------------------------------------- */ 
+.h2{
+  text-align: center;
+  font-style: oblique;
+  font-size: 2.5rem;
+  padding: 2rem;
+}
+ 
+.sinagogas{
+  display: flex;
+  margin: 0;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px 0
+  rgb(0, 0, 0, .5);
+}
+
+.texto{
+  text-align: center;
+  text-align: center;
+  padding: 2rem;
+}
+.maps{
+  width: 100%;
+  padding: 2rem;
+}
+
+.mapa{
+  align-content: right;
+  align-items: center;
+}
+/*--------------------------------------------------------*/
+footer{
+  background: #333333;
+  color: antiquewhite;
+}
+
+.footer{
+  display: flex;
+}
+.siguenos{
+  text-align: center;
+  padding: 3rem;
+}
+.redes{
+  display: flex;
+  padding: 2rem;
+  align-content: center;
+  align-items: center;
 }
 

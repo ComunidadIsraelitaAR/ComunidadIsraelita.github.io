@@ -10,14 +10,80 @@
     <link rel="stylesheet" href="./ASSETS/CSS/temas.css">
     <title>Document</title>
 </head>
-<body style="background: rgb(8,0,255);
-background: linear-gradient(90deg, rgba(8,0,255,1) 0%, rgba(8,0,255,1) 21%, rgba(102,0,148,1) 38%);">
+<body >
+  <!-- Load Facebook SDK for JavaScript -->
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '{your-app-id}',
+        xfbml      : true,
+        version    : 'v3.2'
+      });
     
-        <div class="container">
-            asd
-        </div>
-      
-        <div class="container" id="temas">
+      // Get Embedded Video Player API Instance
+      var my_video_player;
+      FB.Event.subscribe('xfbml.ready', function(msg) {
+        if (msg.type === 'video') {
+          my_video_player = msg.instance;
+        }
+      });
+    };
+  </script>
+    <!--NAVBAR-->
+<header class="header">
+  <nav class="navbar navbar-expand-md navbar-light">
+    <a href="../index.html" class="navbar-brand"><img src="../logoestrella.jpg" width="80px" height="80px" alt=""></a>
+    <ul class="navbar-nav">
+      <span class="navbar">ESCUELA SABATICA</span>  
+  </ul>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar6">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+
+    <div class="navbar-collapse collapse justify-content-stretch" id="navbar6">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href=" $('html, body').animate({ scrollTop: $('.swiper-container').offset().top }, 500);">Estudios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Acerca de</a>
+            </li>
+            <span class="navbar">Comunidad Israelita A.R.</span>
+        </ul>
+    </div>
+  </nav>
+</header>
+
+
+<div class="temas" style="background: rgb(8,0,255);
+background: linear-gradient(90deg, rgba(8,0,255,1) 0%, rgba(8,0,255,1) 21%, rgba(102,0,148,1) 38%);">
+  <div class="container"><div class="h3 titulo-superior" >La alabanza espiritual</div></div>
+  <div class="container"><div class="h3 titulo-inferior">Salmos 111: 1</div></div>
+</div>
+
+<div id="fb-root"></div>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+<!-- Your embedded video player code -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+      <div  
+      class="fb-video" 
+      data-href="https://www.facebook.com/facebook/videos/10153231379946729/" 
+      data-width="500" 
+      data-allowfullscreen="true"></div>
+    </div>
+    </div>
+  </div>
+</div>      
+
+
+
+<div class="container" id="temas">
           <div class="row">
             <div class="col-md-8 mx-auto">
               <p>Hay otra actividad que va aunada con la oración dentro del Culto Racional en los días Solemnes, es la “Alabanza Espiritual”, la cual es elevada al Santo de Israel en donde se reconocen sus obras y valentías, son cánticos principalmente de agradecimiento por todo lo que recibimos de su Mano.

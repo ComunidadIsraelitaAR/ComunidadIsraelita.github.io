@@ -1,13 +1,30 @@
-.tema1{
-    background-color: rgb(117, 66, 0);
-    height: 400px;
+@font-face {
+    font-family: 'Lemon/Milk Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Lemon/Milk Regular'), url('../../../LemonMilk.woff') format('woff');
 }
 
-#temas{
-    padding-top: 6rem;
+
+
+.temas{
+        background: rgb(255,196,0);
+        background: linear-gradient(180deg, rgba(255,196,0,1) 0%, rgba(255,196,0,1) 42%, rgba(163,95,0,1) 68%);
 }
 
-.container{
-    padding: 0%;
-    
+.titulo-superior{
+    padding: 2rem;
+    font-size: 2.5rem;
+    font-family: 'Lemon/Milk Regular';
+    font-weight: normal;
+    font-size:42px;
+}
+
+.titulo-inferior{
+    text-align: right;
+    font-size: 2.5rem;
+    padding: 2rem;
+    font-family: 'Lemon/Milk Regular';
+    font-weight: normal;
+    font-size:42px;
 }
