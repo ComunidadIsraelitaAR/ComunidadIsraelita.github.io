@@ -32,3 +32,22 @@
     font-weight: normal;
     font-size:42px;
 }
+
+footer{
+    background: #333333;
+    color: antiquewhite;
+  }
+  
+  .footer{
+    display: flex;
+  }
+  .siguenos{
+    text-align: center;
+    padding: 3rem;
+  }
+  .redes{
+    display: flex;
+    padding: 2rem;
+    align-content: center;
+    align-items: center;
+  }
