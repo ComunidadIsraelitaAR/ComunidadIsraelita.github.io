@@ -6,15 +6,6 @@
 }
 
 
-#temas{
-    padding: 1rem;
-}
-.temas{
-        background: rgb(255,196,0);
-        background: linear-gradient(180deg, rgba(255,196,0,1) 0%, rgba(255,196,0,1) 42%, rgba(163,95,0,1) 68%);
-}
-
-
 
 .titulo-superior{
     padding: 2rem;
@@ -51,3 +42,4 @@ footer{
     align-content: center;
     align-items: center;
   }
+
