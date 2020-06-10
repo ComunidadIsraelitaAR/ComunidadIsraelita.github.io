@@ -157,7 +157,10 @@
 footer{
   background: #333333;
   color: antiquewhite;
+  align-content: center;
 }
+
+
 
 .footer{
   display: flex;
@@ -166,9 +169,9 @@ footer{
   text-align: center;
   padding: 3rem;
 }
+
 .redes{
-  display: flex;
-  padding: 2rem;
+  padding-left: 3rem;
   align-content: center;
   align-items: center;
 }
