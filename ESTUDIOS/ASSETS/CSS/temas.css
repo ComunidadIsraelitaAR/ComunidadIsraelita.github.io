@@ -5,7 +5,9 @@
     src: local('Lemon/Milk Regular'), url('../../../LemonMilk.woff') format('woff');
 }
 
-
+.temas{
+width: 100%
+}
 
 .titulo-superior{
     padding: 2rem;
